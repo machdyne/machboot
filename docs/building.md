@@ -8,7 +8,7 @@
 | nextpnr-ecp5, ecppack | place and route, bitstream | native, or `pip install yowasp-nextpnr-ecp5` |
 | RISC-V GCC | boot ROM and firmware | any rv32im-capable one: `riscv-none-elf-` (xPack) or `riscv64-unknown-elf-` |
 | Python 3 + Pillow | font, images, tests, PNGs | |
-| pyfatfs | test SD card images | `pip install pyfatfs`; tests only |
+| pyfatfs | test SD card images | `pip install pyfatfs "setuptools<81"`; tests only (its `fs` dependency needs `pkg_resources`) |
 | g++, cc | the simulation, the PC build of the firmware | |
 | openFPGALoader / dfu-util | putting it on a board | |
 

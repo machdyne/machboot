@@ -29,7 +29,7 @@ jobs:
           curl -sL $ARM_GCC | tar xz -C $HOME/tc
           echo "$(ls -d $HOME/tc/xpack-riscv-none-elf-gcc-*)/bin" >> $GITHUB_PATH
           echo "$(ls -d $HOME/tc/xpack-arm-none-eabi-gcc-*)/bin" >> $GITHUB_PATH
-          pip install --break-system-packages yowasp-yosys yowasp-nextpnr-ecp5 pillow
+          pip install --break-system-packages setuptools==80.10.2 pillow==12.3.0 pyfatfs==1.1.0 yowasp-nextpnr-ecp5==0.11.1.0.post826 yowasp-yosys==0.71.0.0.post1285
           git clone -q --depth 1 -b 1.5.1 https://github.com/raspberrypi/pico-sdk $HOME/pico-sdk
           git -C $HOME/pico-sdk submodule update -q --init --depth 1 lib/tinyusb
 
