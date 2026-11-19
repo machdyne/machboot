@@ -1,6 +1,6 @@
 # machboot
 
-A boot manager for Machdyne FPGA computers. At power-on it shows a
+A boot manager for FPGA computers. At power-on it shows a
 startup screen and counts down to your default system. Press a key and
 you get a menu to start, install, update and remove systems -- Zeitlos,
 Mach86, Kakao, anything else that is an ECP5 bitstream -- plus a USB
