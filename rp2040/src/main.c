@@ -2,12 +2,12 @@
  * machboot supervisor -- RP2040 firmware for Sergei and Mozart
  * Copyright (c) 2026 Lone Dynamics Corporation. All rights reserved.
  *
- * Phase 3a (docs/rp2040.md): a drop-in for the dirtyJTAG firmware the
+ * A drop-in (docs/rp2040.md) for the dirtyJTAG firmware the
  * carriers ship with -- JTAG for openFPGALoader, the module's UART as a
  * USB serial port, and the module's 48 MHz clock. Clean-room: written
  * from the protocol and the schematics, not from dirtyJTAG.
  *
- * Phase 3b (docs/power-on.md): the menu loaded at power-on and after a
+ * Also (docs/power-on.md): the menu loaded at power-on and after a
  * reset (sv.c), settings kept here (store.c), the card reader (msc.c).
  */
 

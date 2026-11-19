@@ -2,8 +2,7 @@
 #
 # Ball assignments from the Zeitlos tree's boards/lakritz_v0.lpf
 # (zeitlos ede46a8), which has them from the board's schematic and
-# KiCad netlist. Only the pins machboot uses are here; the USB device
-# port arrives in a later round (docs/plan.md).
+# KiCad netlist. Only the pins machboot uses are here.
 
 BLOCK RESETPATHS;
 BLOCK ASYNCPATHS;
@@ -44,7 +43,7 @@ LOCATE COMP "SD_MISO" SITE "F3";
 IOBUF PORT "SD_MISO" IO_TYPE=LVCMOS33 PULLMODE=UP;
 
 # Serial console on PMOD A pins 2 and 3, as Zeitlos's UART0
-# (a USB-UART PMOD; the USB-C console comes with Phase 4).
+# (a USB-UART PMOD; the same console is also on the USB-C port).
 LOCATE COMP "UART0_TX" SITE "B12";
 IOBUF PORT "UART0_TX" IO_TYPE=LVCMOS33;
 LOCATE COMP "UART0_RX" SITE "B13";

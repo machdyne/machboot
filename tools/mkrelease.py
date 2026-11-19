@@ -25,6 +25,7 @@ FILES = (
      for s in ('-install.bin', '.bin', '-sram.bit')]
 )
 EXTRA = [('docs/quickstart.md', 'QUICKSTART.md'), ('LICENSE.md', 'LICENSE.md'),
+         ('THIRD-PARTY.md', 'THIRD-PARTY.md'),
          ('tools/mksys.py', 'mksys.py')]
 
 def main():

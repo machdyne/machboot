@@ -16,6 +16,7 @@ repository's `docs/`.
 | `machboot-lakritz-install.bin`, `machboot-konfekt-install.bin` | Lakritz, Konfekt: installs machboot from tinydfu with `dfu-util` |
 | `machboot-lakritz.bin`, `machboot-konfekt.bin` | Lakritz, Konfekt: the boot-slot image, for writing at 0 over JTAG |
 | `mksys.py` | puts a system on an SD card the way machboot looks for it |
+| `LICENSE.md`, `THIRD-PARTY.md` | machboot's license, and the notices for pico-sdk, TinyUSB and ulixxe's USB core |
 | `SHA256SUMS` | checksums of the files above |
 
 ## Try it first (any board, writes nothing)

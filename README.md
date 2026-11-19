@@ -52,6 +52,8 @@ Starting Mach86 in 3 ... (Enter: start now, F8, Esc or m: menu)
 On Lakritz and Konfekt, Zeitlos's 1 MB region in flash is always left
 alone, whatever is installed.
 
+If you have an unsupported board and want to use machboot, please open an issue.
+
 ## Getting started
 
 Download the files from the latest release on GitHub; its QUICKSTART.md
@@ -187,4 +189,10 @@ Known issues:
 
 ## License
 
-See LICENSE.md.
+The contents of this repo are released under the [Lone Dynamics Open License](LICENSE.md) with the following exceptions:
+
+- rtl/ulixxe (ulixxe's USB full-speed device SIE and PHY, from [usb_cdc](https://github.com/ulixxe/usb_cdc)) uses the MIT license; see rtl/ulixxe/LICENSE.
+
+Code reused from [Zeitlos](https://github.com/machdyne/zeitlos) (the CPU, the SPI flash controller, the SPI master, the UART, the USB host, the key/value log and the 8x16 ASCII glyphs) is under the same license as this repo; docs/provenance.md lists each file.
+
+The RP2040 firmware is built with [pico-sdk](https://github.com/raspberrypi/pico-sdk) (BSD-3-Clause) and [TinyUSB](https://github.com/hathach/tinyusb) (MIT). Neither is part of this repo, but both are in the UF2 files, so their notices are in [THIRD-PARTY.md](THIRD-PARTY.md), which every release includes.

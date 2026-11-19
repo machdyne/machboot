@@ -244,7 +244,7 @@ $(B)/machboot-$(BOARD)-install.bin: $(B)/$(BOARD)-inst.bit $(B)/fw.img $(B)/mach
 
 installer: $(B)/machboot-$(BOARD)-install.bin
 
-# -- Phase 0: what the menu costs on a 45F --------------------------------------------
+# -- make measure: what the menu costs on a 45F -----------------------------------
 
 $(B)/$(BOARD)-45f.json: $(RTL) $(B)/bootrom.hex $(B)/font.hex
 	$(YOSYS) -q -l $(B)/$(BOARD)-45f-synth.log $(DEFINES) -DMB_DIE_45F -p \
