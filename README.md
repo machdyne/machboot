@@ -7,6 +7,8 @@ Mach86, Kakao, anything else that is an ECP5 bitstream -- plus a USB
 card reader, settings and diagnostics. Think of a PC's BIOS setup, for a
 machine whose "BIOS" is a bitstream.
 
+![Machboot Screenshot](https://github.com/machdyne/machboot/blob/6b5002aab9418bd253048f2e429622f346649d70/ss.png)
+
 ```
 machboot 0.4  Machdyne Sergei ML2
 Starting Mach86 in 3 ... (Enter: start now, F8, Esc or m: menu)
